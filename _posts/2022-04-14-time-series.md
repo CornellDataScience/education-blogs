@@ -26,4 +26,12 @@ There are several open-source Python libraries we will use for time series analy
 * `datetime`: provides all the necessary functionality for reading, formatting, and manipulating time
 
 Here's a flowchart of some of these packages for reference:
-![Flowchart of python packages for time series analysis](/images/2022-04-14-time-series/libflow.png)
+![Flowchart of python packages for time series analysis](/education-blogs/images/2022-04-14-time-series/libflow.png)
+
+## Basic Components of a Time Series
+
+A time series is comprised of four basic components:
+* **Level**: the mean value around which the time series varies
+* **Trend**: the increasing or decreasing behavior of a variable over time
+* **Seasonality**: any cyclic behavior of a variable over time
+* **Noise/Residual**: the remaining error in the observations (due to environmental factors)
