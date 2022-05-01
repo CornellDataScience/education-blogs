@@ -32,6 +32,8 @@
       @include full();
     }
   }
+  
+  
 }
 
 .page__title {
@@ -48,11 +50,19 @@
   font-size: $type-size-4;
 }
 
+p.interviews-content{
+  padding-left:15px;
+}
+
 .page__content {
 
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
+  }
+
+  h5 {
+    color:#828282;
   }
 
   p, li, dl {
@@ -99,13 +109,16 @@
   .small {
     font-size: $type-size-6;
   }
-
+  
   /* blockquote citations */
   blockquote + .small {
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
 }
+
+
+
 
 .page__hero {
   position: relative;
