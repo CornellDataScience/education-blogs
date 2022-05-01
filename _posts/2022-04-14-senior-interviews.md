@@ -2,6 +2,7 @@
 title: 'Insights from CDS Seniors'
 date: 2022-05-01
 permalink: /posts/2022/04/senior-interviews/
+excerpt: Wisdom from the 2022 CDS graduating class. 
 tags:
   - blog
 ---
