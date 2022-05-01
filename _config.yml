@@ -9,11 +9,11 @@
 locale                   : "en-US"
 title                    : "CDS Tutorials"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
-url                      : https://vfong00.github.io/cds-tutorials-test # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "vfong00/cds-tutorials-test"
+name                     : &name "CDS Education"
+description              : &description "Host of articles, blogs, and tutorials written by the Education subteam."
+url                      : https://cornelldatascience.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "/education-blogs" # the subpath of your site, e.g. "/blog"
+repository               : "CornellDataScience/education-blogs"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
