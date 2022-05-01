@@ -35,3 +35,32 @@ A time series is comprised of four basic components:
 * **Trend**: the increasing or decreasing behavior of a variable over time
 * **Seasonality**: any cyclic behavior of a variable over time
 * **Noise/Residual**: the remaining error in the observations (due to environmental factors)
+
+It is helpful to think of these four components as combining either additively or multiplicatively. An additive model suggests that these components are added together
+
+<pre>
+[y(t) = Level + Trend + Seasonality + Noise]
+</pre>
+ 
+while a multiplicative model suggests that the components are multiplied together.
+
+<pre>
+[y(t) = Level * Trend * Seasonality * Noise]. 
+</pre>
+
+This decompositional approach to time series provides a structured way to think about forecasting problems, both generally in terms of modeling complexity and specifically in terms of how best to represent each of these components within a given model. 
+
+However, you may not always be able to perfectly break down your time series into an additive or multiplicative model. Unfortunately, real-world problems are messy and noisy. A time series could consist of both additive and multiplicative components. There could be an increasing trend, followed by a decreasing trend. In spite of this, abstract models provide a simple framework by which you can analyze your data and explore ways to look at and forecast your problem.
+
+## Time Series Decomposition Using Statsmodels
+
+<pre>
+import pandas as pd
+import matplotlib.pyplot as plt
+from statsmodels.tsa.seasonal import seasonal_decompose
+series = pd.read_csv('FILENAME')
+result = seasonal_decompose(series, model='multiplicative') # can use additive as well
+result.plot()
+plt.show()
+</pre>
+
