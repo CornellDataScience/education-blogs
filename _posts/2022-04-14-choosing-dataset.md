@@ -1,5 +1,6 @@
 ---
 title: 'Choosing a good dataset'
+excerpt: This tutorial will contain content relating to creating your own data science project! Often, topics pertaining to beginning projects, such as formulating a question and finding the right data sets can be difficult. We hope to provide insight to get you started.
 date: 2022-04-14
 permalink: /posts/2022/04/choosing-dataset/
 tags:

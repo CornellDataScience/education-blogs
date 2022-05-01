@@ -1,5 +1,6 @@
 ---
 title: 'Your title'
+excerpt: your excerpt
 date: 2015-03-14
 permalink: /posts/2015/03/your-short-title/
 tags:

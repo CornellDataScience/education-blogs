@@ -64,3 +64,130 @@ result.plot()
 plt.show()
 </pre>
 
+## Terms Used in Forecasting
+
+Here are several universal terms we will use when discussing forecasting:
+* **forecast**: Forecasting involves predicting values in the future, where “future” is defined as observations that occur after the data used to train the model
+* **fitted values**: These are predictions made by the time series model on the training data
+* **train/test split**: This involves splitting the data into training data (used to develop the model) and testing data (used to evaluate model performance). Unlike many other machine learning models, this process is not random. Instead, we set a cutoff point and let observations that occur before this cutoff constitute the training data, and those after the cutoff the testing data.
+
+## Common Models Used for Time Series Forecasting
+
+We have a few naive heuristics for simple forecasting:
+* _“Most Recent”/Naive Method_: For these methods, we simply set all forecasts to be the value of the last observation.
+* _“Average”/Mean Method_: Here, the forecasts of all future values are simply equal to the average of the historical training data. 
+* _Seasonal Naive Method_: This naive method is particularly useful for seasonal data. We set each forecast to be the last observed value from the same season. 
+
+However, 
+
+Exponential Smoothing
+
+Exponential smoothing has motivated some of the most successful forecasting models. The idea is that recent examples are weighted averages of previous observations, with the weights decaying exponentially as the observations get older. Generally, there are several different types of exponential smoothing, but we will focus on two: simple exponential smoothing (SES), and Holt-Winters.
+
+Simple Exponential Smoothing
+
+This method is suitable for forecasting data with no clear trend or seasonal pattern. As we saw with the “Most Recent” method and the “Average” method, forecasts were dependent on some weighted average of the observed data (in the “Most Recent” method, all of the weight is given to the last observation, while in the “Average” method, all observations have equal importance). We often want some balance between these two situations: one where we can attach larger weights to more recent observations, but still significantly consider a window of recent observations when determining forecasted values. SES is one way to accomplish this.
+
+In SES, the forecast at time $T + 1$ is equal to the weighted average between the most recent observation yT and the previous forecast ŷT-1|T. More formally:
+
+$$ ŷT+1|t=yT+(1-)ŷT|T-1 $$
+
+where 01 is a smoothing parameter. For the fitted values (one-step forecasts of the training data), we can similarly write them as:
+
+$$ ŷt+1|t=yt+(1-)ŷt|t-1 $$
+
+for $t=1, 2, ... , T$. We can use this recursive definition to write an expression for the forecast at time $T + 1$ in terms of all previous observations, namely:
+
+$$ ŷt+1|t=yt+(1-)yt-1+(1-)2yt-2+ ... =i=0T(1-)iyt-i $$
+
+We can now see how the weights of observations decrease as they get older. Older observations correspond to a larger value of i, which increases the exponent of the 1- coefficient of the observation. And since 01-1, increasing the exponent of 1- decreases the value of (1-)i.
+
+How do we choose ? In some cases, we can choose it in a subjective matter, specified based on previous experience. However, a more generally reliable and objective approach is to estimate it from observed data. Just like in many machine learning models, this involves minimizing a loss function applied on the training data. So we can obtain a good value of  by choosing the one that minimizes some loss function (generally, the sum of the squared errors).
+
+An unfortunate downfall of SES is the “flat-forecast” function. In other words, all forecasts take the same value, equal to the last level component, namely:
+
+$$ ŷT+h|t=ŷT+1|t $$
+
+for $h=2, 3, ...$ Hence, these forecasts are only suitable if the time series has no trend or seasonality, but can also be useful as a baseline.
+
+Fortunately, Python can implement Simple Exponential Smoothing using `statsmodels`.
+
+<pre>
+from statsmodels.tsa.api import SimpleExpSmoothing
+
+n = len(series)
+cutoff = int(0.5*n) # determines split of training and testing data
+series_train = series[:cutoff]
+series_test = series[cutoff:]
+
+h = len(series_test) # number of forecast predictions you want to make
+fit = SimpleExpSmoothing(series_train).fit()
+series_hat = fit.fitted_values
+forecast = fit.forecast(h)
+
+# Plotting
+plt.scatter(range(n), series)
+plt.plot(range(cutoff), series_hat)
+forecast.plot()
+</pre>
+
+## Holt-Winters Model
+
+Often, our time series data has inherent trend and seasonality, and SES tends to perform poorly on such models. At a high-level, Holt-Winters applies seasonality three times:
+Level smoothing (with parameter $⍺$)
+Trend smoothing (with parameter $ꞵ$)
+Seasonal smoothing (with parameter $γ$)
+
+We also specify the length of a seasonal period (s). Additionally, we can specify whether or not to explore seasonality as additive or multiplicative in nature.
+
+
+Holt-Winters Additive
+Holt-Winters Multiplicative
+Model:
+Model:
+Updating:
+Updating:
+When to use:
+When to use:
+
+
+## Autoregressive Models
+
+For stationary time series (i.e., no trend and seasonality), an autoregression sees the value of a variable at time $t$ as a linear function of the values preceding it. Mathematically, this can be expressed as:
+
+$$ yt=C+a1yt-1+a2yt-2+ ... +apyt-p+t $$
+
+In the above expression, $p$ is the autoregressive parameter which indicates how many time steps to look at previously. $t$ is white noise, meaning that errors are independent and identically distributed (i.i.d) with a normal distribution that has mean 0 and constant variance.
+
+The value of $p$ can be set using various approaches, but one common method is to look at the auto-correlation function (ACF) plot or correlogram. This graph is a visual way to show serial correlation in data at various lags. The statsmodels library allows us to visualize the autocorrelation plot:
+
+<pre>
+from statsmodels.graphics.tsaplots import plot_acf
+
+cutoff = int(0.5*n) # determines split of training and testing data
+series_train = series[:cutoff] # divides time series into training and testing
+series_test = series[cutoff:]
+plot_acf(series_train, lags = 100)
+plt.show()
+</pre>
+
+
+## Moving Average Models
+
+For stationary time series, a moving average model will, similar to an autoregressive model, model the value of a variable as a linear combination of previous information. However, rather than using the values of the observations, a moving average will use the residual errors. Specifically:
+
+$$ yt=C+t+b1t-1+b2t-2+ ... +bqt-q $$
+
+where $q$ is the moving average parameter, $t$ is white noise, and $t-1 ... t-q$ are the error terms at previous time periods.
+
+The value of $q$ can be set using various approaches, but one common method is to look at the partial auto-correlation function (PACF) plot. A PACF plot is similar to an ACF plot in that we look at correlation values across different lags, except that in a PACF, each partial correlation controls for any correlation between observations of a shorter lag length. Here is how we can plot a PACF using statsmodels (note the code is very similar!):
+
+<pre>
+from statsmodels.graphics.tsaplots import plot_pacf
+
+cutoff = int(0.5*n) # determines split of training and testing data
+series_train = series[:cutoff] # divides time series into training and testing
+series_test = series[cutoff:]
+plot_pacf(series_train, lags = 100)
+plt.show()
+</pre>
