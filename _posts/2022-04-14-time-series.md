@@ -26,4 +26,4 @@ There are several open-source Python libraries we will use for time series analy
 * `datetime`: provides all the necessary functionality for reading, formatting, and manipulating time
 
 Here's a flowchart of some of these packages for reference:
-![Flowchart of python packages for time series analysis](/images/2022-04-14-time-series/libflow.png)
+![Flowchart of python packages for time series analysis](/education-blogs/images/2022-04-14-time-series/libflow.png)
