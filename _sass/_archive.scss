@@ -66,6 +66,16 @@
   }
 }
 
+.archive__read-more {
+  // margin-top: 0;
+  font-size: 0.85em;
+
+  // & + p {
+  //   text-indent: 0;
+  // }
+}
+
+
 .archive__item-teaser {
   border-radius: $border-radius;
   overflow: hidden;
