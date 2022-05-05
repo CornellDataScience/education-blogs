@@ -36,7 +36,7 @@ A time series is comprised of four basic components:
 * **Seasonality**: any cyclic behavior of a variable over time
 * **Noise/Residual**: the remaining error in the observations (due to environmental factors)
 
-It is helpful to think of these four components as combining either additively or multiplicatively. An additive model suggests that these components are added together
+It is helpful to think of these four components as combining either **additively** or **multiplicatively**. An additive model suggests that these components are added together
 
 <pre>
 [y(t) = Level + Trend + Seasonality + Noise]
@@ -54,7 +54,7 @@ However, you may not always be able to perfectly break down your time series int
 
 ## Time Series Decomposition Using Statsmodels
 
-<pre>
+```python
 import pandas as pd
 import matplotlib.pyplot as plt
 from statsmodels.tsa.seasonal import seasonal_decompose
@@ -62,7 +62,7 @@ series = pd.read_csv('FILENAME')
 result = seasonal_decompose(series, model='multiplicative') # can use additive as well
 result.plot()
 plt.show()
-</pre>
+```
 
 ## Terms Used in Forecasting
 
@@ -80,7 +80,7 @@ We have a few naive heuristics for simple forecasting:
 
 ### Exponential Smoothing
 
-Exponential smoothing has motivated some of the most successful forecasting models. The idea is that recent examples are weighted averages of previous observations, with the weights decaying exponentially as the observations get older. Generally, there are several different types of exponential smoothing, but we will focus on two: simple exponential smoothing (SES), and Holt-Winters.
+Exponential smoothing has motivated some of the most successful forecasting models. The idea is that recent examples are weighted averages of previous observations, with the weights decaying exponentially as the observations get older. Generally, there are several different types of exponential smoothing, but we will focus on two: **simple exponential smoothing (SES)**, and **Holt-Winters**.
 
 #### Simple Exponential Smoothing
 
@@ -110,7 +110,7 @@ for $h=2, 3, ...$ Hence, these forecasts are only suitable if the time series ha
 
 Fortunately, Python can implement Simple Exponential Smoothing using `statsmodels`.
 
-<pre>
+```python
 from statsmodels.tsa.api import SimpleExpSmoothing
 
 n = len(series)
@@ -127,7 +127,7 @@ forecast = fit.forecast(h)
 plt.scatter(range(n), series)
 plt.plot(range(cutoff), series_hat)
 forecast.plot()
-</pre>
+```
 
 #### Holt-Winters Model
 
@@ -151,15 +151,15 @@ When to use:
 
 ### Autoregressive Models
 
-For stationary time series (i.e., no trend and seasonality), an autoregression sees the value of a variable at time $t$ as a linear function of the values preceding it. Mathematically, this can be expressed as:
+For stationary time series (i.e., no trend and seasonality), an **autoregression** sees the value of a variable at time $t$ as a linear function of the values preceding it. Mathematically, this can be expressed as:
 
 $$ y_t=C+a_1 y_{t-1}+a_2 y_{t-2}+ ... +a_p y_{t-p}+\epsilon_t $$
 
-In the above expression, $p$ is the autoregressive parameter which indicates how many time steps to look at previously. $\epsilon_t$ is white noise, meaning that errors are independent and identically distributed (i.i.d) with a normal distribution that has mean 0 and constant variance.
+In the above expression, $p$ is the autoregressive parameter which indicates how many time steps to look at previously. $\epsilon_t$ is **white noise**, meaning that errors are independent and identically distributed (i.i.d) with a normal distribution that has mean 0 and constant variance.
 
-The value of $p$ can be set using various approaches, but one common method is to look at the auto-correlation function (ACF) plot or correlogram. This graph is a visual way to show serial correlation in data at various lags. The statsmodels library allows us to visualize the autocorrelation plot:
+The value of $p$ can be set using various approaches, but one common method is to look at the **auto-correlation function (ACF) plot** or correlogram. This graph is a visual way to show serial correlation in data at various lags. The statsmodels library allows us to visualize the autocorrelation plot:
 
-<pre>
+```python
 from statsmodels.graphics.tsaplots import plot_acf
 
 cutoff = int(0.5*n) # determines split of training and testing data
@@ -167,20 +167,20 @@ series_train = series[:cutoff] # divides time series into training and testing
 series_test = series[cutoff:]
 plot_acf(series_train, lags = 100)
 plt.show()
-</pre>
+```
 
 
 ### Moving Average Models
 
-For stationary time series, a moving average model will, similar to an autoregressive model, model the value of a variable as a linear combination of previous information. However, rather than using the values of the observations, a moving average will use the residual errors. Specifically:
+For stationary time series, a **moving average model** will, similar to an autoregressive model, model the value of a variable as a linear combination of previous information. However, rather than using the values of the observations, a moving average will use the residual errors. Specifically:
 
 $$ y_t=C+\epsilon_t+b_1 \epsilon_{t-1}+b_2 \epsilon_{t-2}+ ... +b_q \epsilon_{t-q} $$
 
 where $q$ is the moving average parameter, $\epsilon_t$ is white noise, and $\epsilon_{t-1} ... \epsilon_{t-q}$ are the error terms at previous time periods.
 
-The value of $q$ can be set using various approaches, but one common method is to look at the partial auto-correlation function (PACF) plot. A PACF plot is similar to an ACF plot in that we look at correlation values across different lags, except that in a PACF, each partial correlation controls for any correlation between observations of a shorter lag length. Here is how we can plot a PACF using statsmodels (note the code is very similar!):
+The value of $q$ can be set using various approaches, but one common method is to look at the **partial auto-correlation function (PACF) plot**. A PACF plot is similar to an ACF plot in that we look at correlation values across different lags, except that in a PACF, each partial correlation controls for any correlation between observations of a shorter lag length. Here is how we can plot a PACF using statsmodels (note the code is very similar!):
 
-<pre>
+```python
 from statsmodels.graphics.tsaplots import plot_pacf
 
 cutoff = int(0.5*n) # determines split of training and testing data
@@ -188,4 +188,4 @@ series_train = series[:cutoff] # divides time series into training and testing
 series_test = series[cutoff:]
 plot_pacf(series_train, lags = 100)
 plt.show()
-</pre>
+```
