@@ -22,24 +22,26 @@ tags:
 
 Thank you to the graduating members of Cornell Data Science whose input made this article possible. Find their information below as well as their next steps after graduation.
 
-**Victor Butoi** (CS ‘22): put victors school email here. PhD in Artificial Intelligence at MIT.
+
+**Victor Butoi** (CS ‘22) [<img src="/education-blogs/images/mail_icon.png" width = "20" id = "mail">](mailto:vib9@cornell.edu?subject= [CDS]) : PhD in Artificial Intelligence at MIT
 {:.interviews-content}
-**David Kim** (CS & ECE ‘22): jk2537@cornell.edu Still has one more semester before graduating, but is considering pursuing a PhD or going into industry afterward.
+**Philip Si** (CS & Math ‘22) [<img src="/education-blogs/images/mail_icon.png" width = "20" id = "mail">](mailto:ps789@cornell.edu?subject= [CDS]) : Masters in Machine Learning at Carnegie Mellon University 
 {:.interviews-content}
-**Ronin Sharma** (ECE ‘22): Finishing Masters of Engineering in Fall 2022.
+**David Kim** (CS & ECE ‘22) [<img src="/education-blogs/images/mail_icon.png" width = "20" id = "mail">](mailto:jk2537@cornell.edu?subject= [CDS]) : Still has one more semester before graduating, but is considering pursuing a PhD or going into industry afterward
 {:.interviews-content}
-**Oscar So** (CS MEng ‘22): Software Engineering at Facebook
+**Ronin Sharma** (ECE ‘22) [<img src="/education-blogs/images/mail_icon.png" width = "20" id = "mail">](mailto:rrs234@cornell.edu?subject= [CDS]) : Finishing Masters of Engineering in Fall 2022 
 {:.interviews-content}
-**William Bekerman** (Stats ‘22): PhD in Statistics at Wharton UPenn
+**Oscar So** (CS MEng ‘22) [<img src="/education-blogs/images/mail_icon.png" width = "20" id = "mail">](mailto:ons4@cornell.edu?subject= [CDS]) : Software Engineering at Facebook 
 {:.interviews-content}
-**Stephen Tse** (ORIE ‘22): Machine Learning Engineer at MunichRE
+**William Bekerman** (Stats ‘22) [<img src="/education-blogs/images/mail_icon.png" width = "20" id = "mail">](mailto:wjb239@cornell.edu?subject= [CDS]) : PhD in Statistics at Wharton UPenn
 {:.interviews-content}
-**Bonnie Akhavan** (CS & ORIE ‘22): Graduate Studies in Operations Research at MIT
+**Stephen Tse** (ORIE ‘22) [<img src="/education-blogs/images/mail_icon.png" width = "20" id = "mail">](mailto:st624@cornell.edu?subject= [CDS]) : Machine Learning Engineer at MunichRE 
 {:.interviews-content}
-**Cora Wu** (Computer and Information Sciences ‘22): Software Engineering at Microsoft
+**Bonnie Akhavan** (CS & ORIE ‘22) [<img src="/education-blogs/images/mail_icon.png" width = "20" id = "mail">](mailto:bca44@cornell.edu?subject= [CDS]) : Graduate Studies in Operations Research at MIT 
 {:.interviews-content}
-**Philip Si** (CS & Math ‘22): Masters in Machine Learning at Carnegie Mellon University
+**Cora Wu** (Computer and Information Sciences ‘22) [<img src="/education-blogs/images/mail_icon.png" width = "20" id = "mail">](mailto:cjw322@cornell.edu?subject= [CDS]) : Software Engineering at Microsoft 
 {:.interviews-content}
+
 
 ## Why CDS <a name="why"></a>
 
@@ -62,9 +64,9 @@ Victor and Bonnie contributed to WordRL, where the objective was to build an age
 
 Stephen and Cora worked on the Stanford Medical Collaboration. This project conducted research under a Stanford professor on analyzing trends between county health data and mortality rates.
 
-A popular project with contributions from Bonnie, Phillip, and Stephen was poker bot. The name is pretty self-explanatory, but the goal was to design a pot to play poker! Another project along the same lines of using project team resources to play games was SmashAI, which Phillip and Stephen worked on. 
+A popular project with contributions from Bonnie, Phillip, and Stephen was poker bot. The name is pretty self-explanatory, but the goal was to design a bot to play poker! Another project along the same lines of using project team resources to play games was SmashAI, which Phillip and Stephen worked on. 
 
-If you are interested in learning more about some of these projects as well as others, please refer to the Cornell Data Science website https://cornelldata.science/ 
+If you are interested in learning more about these projects, please refer to the [Cornell Data Science website](https://cornelldata.science/).
 
 ##### Magd was unable to be reached for comment.
 
@@ -79,7 +81,7 @@ William reflects back on AMST 2001: The First American University as the most fu
 
 ORIE 4740: Statistical Data Mining was mentioned as an underrated class by Stephen. It gives a lot of data science practical applications for people interested in going into industry. He also mentioned CS 6784: Advanced Machine Learning Topics as the most interesting due to the fast pace and breadth of topics. Taking this class earlier on in his college career may have had an impact on his future plans. 
 
-Cora mentions CS/INFO 3300 as being an enjoyable course. You get to learn d3, and  make cool visualizations, and the work isn’t too intense.   
+Cora mentions CS/INFO 3300 as being an enjoyable course. You get to learn d3, make cool visualizations, and the work isn’t too intense.   
 
 Bonnie gave insight into the most fun class, Wines, and the most useful, Algo. 2.5 hours of drinking on a Wednesday for credit is something you can’t miss out on. In terms of Algo, it changes your perspective on approaching problems and in her opinion, makes you a better coder; “It will change the way you see the world”. 
 
@@ -103,14 +105,14 @@ One point made by Stephen is the importance of being able to explain your result
 
 Some other skills touched on by Bonnie are NLP and RL. These are areas not usually taught until upper-level courses at Cornell, so being exposed to them earlier through CDS projects is instrumental in giving you the leg up in interviews and such. This is similar to an aspect David mentioned which is being able to learn SQL, a database language highly valued in industry, through DE prior to being exposed to it in his coursework.
 
-### Skills Widely Valued
+#### Skills Widely Valued
 
 
 Speaking a bit more broadly, the graduating members were able to share some of their thoughts on skills that are widely valued in industry/research. 
 
 Cora remarked on the importance of getting experience working on projects in general. Whether it be personal projects, or collaborations, you learn a variety of skills and tools. 
 
-The ability to learn and adapt quickly was touched on by both Stephen, Oscar, and Bonnie. Joining a new team as an intern or research assistant can be overwhelming but if you're able to understand your role and learn how to begin contributing quickly, it will set you apart in the long run. Lots of companies don’t necessarily care what you already know to a certain extent, just how diligent you are when it comes to learning new things. 
+The ability to learn and adapt quickly was touched on by Stephen, Oscar, and Bonnie. Joining a new team as an intern or research assistant can be overwhelming but if you're able to understand your role and quickly learn how to begin contributing, it will set you apart in the long run. Lots of companies don’t necessarily care what you already know to a certain extent, just how diligent you are when it comes to learning new things. 
 
 Being curious and learning to apply previous experience to new jobs are two skills Bonnie mentioned. Understanding which questions are important over time and things to be on the lookout for are commonalities that can carry between companies/industries. Staying engaged and curious about problems during your experiences is very important. You’ll stand out as an employee/student/researcher just by constantly paying attention and being willing to contribute. 
 
@@ -139,22 +141,24 @@ David, Victor, and Bonnie mentioned that networking has helped them either secur
 ## Finding Your Path <a name="path"></a>
 
 
-### Finding What You Want To Do 
+#### Finding What You Want To Do 
 
 This topic wasn’t one we were originally planning on asking the seniors about, but Victor brought it up at the end of his interview, and we thought it was a great topic to touch on that most people don’t talk about directly. 
 
-CS and data science / ML are such broad fields, you can end up getting your degree and still having no idea where to focus or what you want to do. 
+CS and data science / ML are such broad fields. You can end up getting your degree and still having no idea where to focus or what you want to do. 
 
-Victor’s advice on the subject was to explore topics via media that don’t consume a ton of your time. Fully diving into a subject and doing a project/taking a full class on it requires a lot of time and commitment. Instead, try to explore areas via papers, articles, books, youtube, podcasts, etc. It's easy to find what you don’t like, but narrowing it down to what you do is harder. Explore why things are cool and find what is meaningful. Your path will naturally follow. Working on projects that align with classes you have taken is a good way to explore the material further, Ronin added. He took the ECE CV course which is what drove him to work on the GAN art generation project and eventually made him realize CV was not for him. What you work on/learn in class doesn’t necessarily translate to industry so exploring the topics both in class and outside of class can really help give you the full picture. David’s advice on the matter was “you don’t know until you try”. There’s really no way to tell if you’re going to like something just based on other people’s experiences. Give everything a shot and see if it sticks. Phillip’s advice was along the same track; try joining different projects in different fields and see which ones resonate with you.
+Victor’s advice on the subject was to explore topics via media that don’t consume a ton of your time. Fully diving into a subject and doing a project/taking a full class on it requires a lot of time and commitment. Instead, try to explore areas via papers, articles, books, youtube, podcasts, etc. It's easy to find what you don’t like, but narrowing it down to what you do like is harder. Explore why things are cool and find what is meaningful. Your path will naturally follow. Working on projects that align with classes you have taken is a good way to explore the material further, Ronin added. He took the ECE CV course which is what drove him to work on the GAN art generation project and eventually made him realize CV was not for him. What you work on/learn in class doesn’t necessarily translate to industry so exploring the topics both in class and outside of class can really help give you the full picture. David’s advice on the matter was “you don’t know until you try”. There’s really no way to tell if you’re going to like something just based on other people’s experiences. Give everything a shot and see if it sticks. Phillip’s advice was along the same track: try joining different projects in different fields and see which ones resonate with you.
 
-### Interview Prep
+#### Interview Prep
 
 
 The answers to how did you prepare for technical interviews fell into two categories: LEETCODE!!!! And I didn’t. 
 
 Starting with the “don’t prepare” crew, Victor mentioned that if it was meant to be and you’re qualified for the job, it’ll work out. Stephen backed this up by saying that in general, he does very little. Being comfortable enough with topics to give high-level overviews or demonstrate familiarity usually suffices. Explaining your thought process and general communication is more important than memorizing equations or minute details. Oscar also echoed this general sentiment. Not necessarily preparing for each interview specifically, but just through lots of interviews, he gained more experience. 
 
-On the other side of the spectrum is the Leetcode crew. David described it as a “necessary evil.” Dedicate time to grind it out without distractions and know how to solve the common problems interviews will throw at you. Cora felt the same way; it sucks but if you grind you can get so many good opportunities. Ronin didn’t necessarily devote his life to leetcode but focused on small projects/scripting tasks that reinforced the same skills. Bonnie also agreed that leetcode is your best friend for SWE positions. Research the company beforehand as they often reuse questions or ask things along the same lines. For quant positions brush up on probability, combinatorics, linear algebra, and calculus, no one will care if you know anything about finance. Mock interviews can be extremely helpful for case interviews. Additionally, the engineering career center always has appointments for technical mock interviews Bonnie mentioned. These are a great way to practice in a lower-stress environment. Some other pieces of general advice Bonnie was able to give was to research the company beforehand and it's all about how you approach the problem. You want to ask your interviewer questions, but none that show you didn’t do your homework or make you look confused. In terms of actually solving the questions, sometimes it’s enough to have a good attitude and talk through how you are approaching the problem. Even if you aren’t 100% correct, engaging with the interviewer by asking questions and talking out your thoughts/confusion can be really helpful. Another piece of advice Bonnie gave about quant/finance interviews is to read the newspaper the day of or the day before the interview. Some interviewers have asked about current events to gauge whether you stay engaged with the news. 
+On the other side of the spectrum is the Leetcode crew. David described it as a “necessary evil.” Dedicate time to grind it out without distractions and know how to solve the common problems interviews will throw at you. Cora felt the same way; it sucks but if you grind you can get so many good opportunities. Ronin didn’t necessarily devote his life to leetcode but focused on small projects/scripting tasks that reinforced the same skills. Bonnie also agreed that leetcode is your best friend for SWE positions. Research the company beforehand as they often reuse questions or ask things along the same lines. For quant positions brush up on probability, combinatorics, linear algebra, and calculus, no one will care if you know anything about finance.
+
+ Mock interviews can be extremely helpful for case interviews. Additionally, Bonnie added that the engineering career center always has appointments for technical mock interviews. These are a great way to practice in a lower-stress environment. Some other pieces of general advice Bonnie was able to give was to research the company beforehand and it's all about how you approach the problem. You want to ask your interviewer questions, but none that show you didn’t do your homework or make you look confused. In terms of actually solving the questions, sometimes it’s enough to have a good attitude and talk through how you are approaching the problem. Even if you aren’t 100% correct, engaging with the interviewer by asking questions and talking out your thoughts/confusion can be really helpful. Another piece of advice Bonnie gave about quant/finance interviews is to read the newspaper the day of or the day before the interview. Some interviewers have asked about current events to gauge whether you stay engaged with the news. 
 
 ##### Magd was unable to be reached for comment. 
 
@@ -188,24 +192,24 @@ We asked the graduating members what advice they would give their freshman self 
 
 #### Favorite Memory
 
-Insights socials at Eric’s apartment - Oscar
+"Insights socials at Eric’s apartment" - Oscar
 
-The people :) - William
+"The people :)" - William
 
-A surprise birthday party that was thrown at my house. Even if it wasn't totally a surprise, I had a lot of fun, and is still one of my favorite events. More recently, the cooking show social that I hosted was a blast. Philip and I put so much into making it happen and hearing that people enjoyed it was such a relief.  - Stephen
+"A surprise birthday party that was thrown at my house. Even if it wasn't totally a surprise, I had a lot of fun, and is still one of my favorite events. More recently, the cooking show social that I hosted was a blast. Philip and I put so much into making it happen and hearing that people enjoyed it was such a relief."  - Stephen
 
 
-Hanging out with my CDS friends before meetings. I've found that it can be super tough in college to maintain lasting friendships, but I always love hanging out with CDS folk and just talking about our days/ML/life. Wouldn't wish for anything else.  - Bonnie
+"Hanging out with my CDS friends before meetings. I've found that it can be super tough in college to maintain lasting friendships, but I always love hanging out with CDS folk and just talking about our days/ML/life. Wouldn't wish for anything else."  - Bonnie
 
-My favorite memories are probably from IntSys subteam socials! I love just hanging out and catching up with everyone outside of our typical work. :)  - Cora
+"My favorite memories are probably from IntSys subteam socials! I love just hanging out and catching up with everyone outside of our typical work. :)"  - Cora
 
-Last semester, before October we had the weekly food group who went on a hike. Only three people went but it was a lot of fun. We went to Buttermilk falls and it had rained the previous day so navigating that was very fun since there were streams we had to go around or over. - Ronin
+"Last semester, before October we had the weekly food group who went on a hike. Only three people went but it was a lot of fun. We went to Buttermilk falls and it had rained the previous day so navigating that was very fun since there were streams we had to go around or over." - Ronin
 
-Secret Santa right before Covid shut everything down - David
+"Secret Santa right before Covid shut everything down" - David
 
-Stewart park last year, jumping into the lake  - Victor
+"Stewart park last year, jumping into the lake"  - Victor
 
-The running joke leading up to the paintball social a few semesters ago, where I asked if I could friendly fire. I ended up getting friendly fired by Stephen - Phillip
+"The running joke leading up to the paintball social a few semesters ago, where I asked if I could friendly fire. I ended up getting friendly fired by Stephen" - Phillip
 
 
 
@@ -213,9 +217,9 @@ The running joke leading up to the paintball social a few semesters ago, where I
 
 All the graduating members expressed their gratefulness for CDS and the connections they’ve made in this club. I think this really speaks to the great culture we have at CDS where it’s a fundamental part of people’s college experience and they’re able to leave with lifetime friends. 
 
-I love CDS and everyone that is a part of it! I wish you all the best in your future endeavors! I know you're all going to accomplish great things. I'm thankful that I was able to contribute to and be a part of this organization. It's truly been a life-changing experience. - Stephen
+"I love CDS and everyone that is a part of it! I wish you all the best in your future endeavors! I know you're all going to accomplish great things. I'm thankful that I was able to contribute to and be a part of this organization. It's truly been a life-changing experience." - Stephen
 
-The social aspect is what ties CDS together. We are different from other project teams in that we don’t have one uniting main project, so we have to rely on social connections to keep us together. Don’t let that die. People who are friends make better projects so be friends. - Victor
+"The social aspect is what ties CDS together. We are different from other project teams in that we don’t have one uniting main project, so we have to rely on social connections to keep us together. Don’t let that die. People who are friends make better projects so be friends." - Victor
 
 “How the turn tables - Michael Scott” - David Kim ‘22
 

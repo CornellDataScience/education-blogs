@@ -276,6 +276,9 @@ whitelist:
   - jekyll-feed
   - jemoji
 
+exclude: 
+  - node_modules
+
 
 # Archives
 #  Type
