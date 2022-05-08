@@ -41,6 +41,8 @@ Thank you to the graduating members of Cornell Data Science whose input made thi
 {:.interviews-content}
 **Cora Wu** (Computer and Information Sciences ‘22) [<img src="/education-blogs/images/mail_icon.png" width = "20" id = "mail">](mailto:cjw322@cornell.edu?subject= [CDS]) : Software Engineering at Microsoft 
 {:.interviews-content}
+**Magd Bayoumi** (CS ‘22) [<img src="/education-blogs/images/mail_icon.png" width = "20" id = "mail">](mailto:mb2363@cornell.edu?subject= [CDS]) : Machine Learning Engineer at MunichRE
+{:.interviews-content}
 
 
 ## Why CDS <a name="why"></a>
@@ -149,6 +151,8 @@ CS and data science / ML are such broad fields. You can end up getting your degr
 
 Victor’s advice on the subject was to explore topics via media that don’t consume a ton of your time. Fully diving into a subject and doing a project/taking a full class on it requires a lot of time and commitment. Instead, try to explore areas via papers, articles, books, youtube, podcasts, etc. It's easy to find what you don’t like, but narrowing it down to what you do like is harder. Explore why things are cool and find what is meaningful. Your path will naturally follow. Working on projects that align with classes you have taken is a good way to explore the material further, Ronin added. He took the ECE CV course which is what drove him to work on the GAN art generation project and eventually made him realize CV was not for him. What you work on/learn in class doesn’t necessarily translate to industry so exploring the topics both in class and outside of class can really help give you the full picture. David’s advice on the matter was “you don’t know until you try”. There’s really no way to tell if you’re going to like something just based on other people’s experiences. Give everything a shot and see if it sticks. Phillip’s advice was along the same track: try joining different projects in different fields and see which ones resonate with you.
 
+While we were not successfully able to hear Magd's opinionsjust  about this topic, he did once say "Fuck CV, NLP is the wave", which might be as insightful as everyone else's experiences.
+
 #### Interview Prep
 
 
@@ -190,6 +194,8 @@ We asked the graduating members what advice they would give their freshman self 
 
 “Work on different types of projects in CDS. Cross collabs are great to get involved with since you learn other teams’ structures” - Ronin
 
+##### Magd was unable to be reached for comment. 
+
 #### Favorite Memory
 
 "Insights socials at Eric’s apartment" - Oscar
@@ -211,7 +217,7 @@ We asked the graduating members what advice they would give their freshman self 
 
 "The running joke leading up to the paintball social a few semesters ago, where I asked if I could friendly fire. I ended up getting friendly fired by Stephen" - Phillip
 
-
+"Being called Magdaddy 😉" - Magd
 
 #### Departing Thoughts
 
